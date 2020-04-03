@@ -1,2 +1,0 @@
-# SquareGame
-Created with CodeSandbox
