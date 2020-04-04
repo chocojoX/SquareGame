@@ -1,10 +1,10 @@
 import Square from "./square.js";
 
 function createRandomSquare(game_width, game_height) {
-  let size = Math.floor(10 + 100 * Math.random());
+  let size = Math.floor(25 + 75 * Math.random());
 
-  let position_row = (game_width - size) * Math.random();
-  let position_col = (game_height - size) * Math.random();
+  let position_col = (game_width - size) * Math.random();
+  let position_row = (game_height - size) * Math.random();
   let position = [position_col, position_row];
 
   let angle = 2 * Math.PI * Math.random();

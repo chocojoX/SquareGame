@@ -1,5 +1,5 @@
-import "./styles.css";
 import ContextManager from "./context_manager.js";
+// import "./styles.css";
 
 const GAME_WIDTH = 800;
 const GAME_HEIGHT = 600;
@@ -32,7 +32,7 @@ for (let i = 0; i < 10; i++) {
 let lastTime = 0;
 
 function gameLoop(timestamp) {
-  let delta_t = 0.001 * (timestamp - lastTime);
+  let delta_t = (timestamp - lastTime);
   lastTime = timestamp;
   ctx.clearRect(0, 0, GAME_WIDTH, GAME_HEIGHT);
   ctx_manager.update(delta_t);
@@ -41,4 +41,4 @@ function gameLoop(timestamp) {
   requestAnimationFrame(gameLoop);
 }
 
-//gameLoop(0);
+gameLoop(0);
